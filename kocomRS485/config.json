@@ -19,10 +19,10 @@
   ],
   "options": {
     "RS485": {
-      "type": "Serial"
+      "type": "Socket"
     },
     "Socket": {
-      "server": "192.168.x.x",
+      "server": "192.168.0.24",
       "port": 8899
     },
     "SocketDevice": {
@@ -36,14 +36,14 @@
     },
     "MQTT": {
       "anonymous": false,
-      "server": "192.168.x.x",
-      "username": "id",
-      "password": "pw"
+      "server": "192.168.0.20",
+      "username": "sora13041304",
+      "password": "rlaauddhr04"
     },
     "Wallpad": {
-      "light": false,
+      "light": true,
       "plug": false,
-      "thermostat": false,
+      "thermostat": true,
       "fan": false,
       "gas": false,
       "elevator": false
@@ -58,7 +58,7 @@
     "KOCOM_LIGHT_SIZE": [
       {
         "name": "livingroom",
-        "number": 3
+        "number": 4
       },
       {
         "name": "bedroom",
