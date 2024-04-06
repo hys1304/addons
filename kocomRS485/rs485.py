@@ -371,6 +371,7 @@ class Kocom(rs485):
 
     def connect_mqtt(self, server, name):
         mqtt_client = mqtt.Client()
+        mqtt_client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION1)
         mqtt_client.on_message = self.on_message
         #mqtt_client.on_publish = self.on_publish
         mqtt_client.on_subscribe = self.on_subscribe
